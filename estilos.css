@@ -1,0 +1,333 @@
+/**
+Selección de estilos y color de texto para toda la página
+*/
+* {
+   font-family: 'Roboto', sans-serif;
+   font-weight: bold;
+	box-sizing: border-box;
+   text-align: center;
+   color: black
+}
+#body {
+   margin: 0;
+   background: linear-gradient(to right, rgb(82, 135, 158) 0%, rgb(159, 197, 209) 46%, rgba(95, 133, 148, 0.99) 100%);
+}
+/**
+Contenedor flexible en dirección vertical para dispositivos móviles
+*/
+.content {
+   display:flex;
+   flex-direction: column;
+   margin: auto;
+}
+/**
+Adaptación del header a dispositivos móviles
+*/
+.header {
+   display:flex;
+   flex-direction: column;
+   padding: 10px 0 15px;
+   font-size: 15px;
+   align-items: center;
+   background:linear-gradient(to right, rgb(179, 220, 237) 0%, rgb(41, 184, 229) 46%, rgba(188, 224, 238, 0.99) 100%); 
+}
+.foto {
+   max-width: 100%;
+   height: auto;
+   margin: 10px;
+   border: 1px solid black;
+   border-radius: 80px;
+   animation-name: agrandarFoto;
+   animation-duration: 2s;
+   animation-fill-mode: forwards;
+}
+@keyframes agrandarFoto {
+   from {
+      width: 0;
+      height: 0;
+   }
+   to {
+      width: 160px;
+      height: 160px;
+   }
+}
+h1 {
+   margin: 5px;
+   font-size: 36px;
+}
+/**
+Disposición vertical del h1 y las cajas que contiene los iconos y datos de contacto
+*/
+.datos-contacto {
+   display:flex;
+   flex-direction: column;
+}
+/**
+Disposición horizontal de los iconos con sus respectivos datos
+*/
+.email, .phone, .location {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin: 2px;
+}
+.icono {
+   width: 20px;
+   height: 20px;
+   padding: 2px;
+}
+.datos-contacto p {
+   font-size: 14px;
+   margin: 0 2px;
+}
+nav {
+   max-width: 100%;
+   background-color: rgb(172, 232, 250);
+}
+/**
+Disposición envolver de los links ancla, para dispositivos móviles
+*/
+nav ul {
+   display:flex;
+   flex-wrap: wrap;
+   padding: 0;
+   margin: 2px;
+   justify-content: center;
+}
+nav ul li {
+   list-style: none;
+   margin: 2px 15px;
+   font-size: 14px;
+}
+/**
+Nota: La propiedad scroll-behavior, no es soportada por Internet Explorer
+*/
+html {
+   scroll-behavior: smooth;
+}
+.section {
+   padding: 0 3px;
+   background-color: white
+}
+article {
+   padding: 0;
+}
+h2 {
+   margin: 10px 0 0;
+   padding: 25px 1px 1px;
+   font-size: 20px;
+   font-weight: bold;
+}
+.perfil {
+   text-align: center;
+}
+article p {
+   max-width: 600px;
+   margin: auto;
+   padding: 0 5px;
+   font-size: 15px;
+   text-align: left;
+}
+.empresa {
+   font-size: 16px;
+}
+article ul {
+   margin-top: 5px;
+   margin-bottom: 10px;
+}
+article ul li {
+   max-width: 600px;
+   margin: auto;
+   padding: 0 5px;
+   font-size: 15px;
+   text-align: left;
+}
+.formacion p {
+   text-align: center;
+}
+.titulo {
+   margin-bottom: 10px;
+}
+/**
+Adaptación de la caja de botones a dispositivos móviles
+Nota: No responsivo para el JioPhone 2, de 240x320 px
+*/
+#cajaDeBotones {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+button {
+   width: 120px;
+   height: 27px;
+   margin: 4px auto 7px;
+   padding: 0;
+   border-radius: 4px;
+   border: none;
+   font-size: 18px;
+   color: #000;
+   background-color: rgb(141, 228, 255);
+   box-shadow: 2px 2px 2px 0 rgb(44, 121, 145);
+   transition: background-color 0.2s;
+   cursor: pointer;
+}
+button:hover {
+   background-color: white;
+   border: 1px solid black;
+}
+#idiomas, #habilidades, #softwares {
+   max-width: 250px;
+   height: 0;
+   margin-top: 0;
+   margin-left: 15px;
+   margin-bottom: 5px;
+   padding: 1px;
+   opacity: 0;
+   transition: opacity 1.5s, height 0.6s;
+}
+#softwares {
+   padding-right: 1px;
+}
+#idiomas ul,
+#habilidades ul,
+#softwares ul {
+   margin: 0 30px;
+   padding-left: 0;    
+}
+#idiomas ul li,
+#habilidades ul li,
+#softwares ul li {
+   font-size: 15px;
+   text-align: left;
+}
+#form-cont {
+   margin-top: 5px;
+   padding-top: 25px;
+}
+.form {
+   max-width: 250px;
+   margin: 0 auto 10px;
+	padding: 0;
+	border: 1px solid #000;
+   border-radius: 10px;
+   background-color: rgb(141, 228, 255);
+}
+form ul {
+	width: 240px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0;
+   list-style: none;
+}
+label {
+	display: inline-block;
+	width: 70px;
+   margin-top: 10px;
+   margin-left: 0;
+	font-size: 13px;
+   text-align: right;
+}
+input, textarea {
+	box-sizing: border-box;
+   width: 140px;
+   margin-top: 10px;
+   padding: 3px;
+  	border: 1px solid black;
+   border-radius: 3px;
+   font-size: 13px;
+   text-align: left;
+}
+textarea {
+	vertical-align: top;
+  	height: 70px;
+}
+#submit {
+   height: 25px;
+   width: 70px;
+   margin: 15px 10px 0;
+   padding: 5px;
+   border-radius: 3px;
+   border: 1px solid black;
+   font-size: 13px;
+   color: black;
+   text-align: center;
+   background-color: rgb(179, 235, 252);
+   box-shadow: 2px 2px 2px 0 rgb(44, 121, 145);
+   transition: background-color 0.2s;
+   cursor: pointer;
+}
+#submit:hover {
+   background-color: white;
+}
+.footer {
+   font-size: 14px;
+   background:linear-gradient(to right, rgb(179, 220, 237) 0%, rgb(41, 184, 229) 46%, rgba(188, 224, 238, 0.99) 100%);
+   padding: 15px 0;
+}
+#sociales {
+   margin: 0;
+   padding: 0 0 10px;
+}
+footer a {
+   display: inline-block;
+   width: 100px;
+   margin: 5px 5px 5px 0;
+}
+/**
+Adaptación de la página a pantallas de escritorio y otros dispositivos
+*/
+@media screen and (min-width: 1024px) {
+   .header {
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+   }
+   nav ul {
+      display: flex;
+      flex-direction: row;
+   }
+   #cajaDeBotones {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: start;
+      justify-items: center;
+   }
+   #boton-idiomas {
+      grid-row: 1/2;
+      grid-column: 1/2;
+   }
+   #boton-habilidades {
+      grid-row: 1/2;
+      grid-column: 2/3;
+   }
+   #boton-softwares {
+      grid-row: 1/2;
+      grid-column: 3/4;
+   }
+   #idiomas {
+      grid-row: 2/3;
+      grid-column: 1/2;
+   }
+   #habilidades {
+      grid-row: 2/3;
+      grid-column: 2/3; 
+   }
+   #softwares {
+      grid-row: 2/3;
+      grid-column: 3/4;
+   }
+   #body {
+      max-width: 1400px;
+      margin: auto;
+   }
+   .content {
+      max-width: 80%;
+      padding: 4px;
+   }
+   nav {
+      position: sticky;
+      top: 0;
+   }
+}
