@@ -33,3 +33,23 @@ document.getElementById('boton-softwares').addEventListener('click', function() 
 			sof.innerHTML="<ul><li>AutoCad: Dominio Avanzado</li><li>SolidWork: Dominio Intermedio</li><li>Catia: Dominio Intermedio</li><li>Microsoft Office (Word-Excel-Access): Dominio Intermedio</li></ul>";				sof.style.opacity="1";			
 		}
 });
+
+/**Geolocalización */
+const options = {
+	enableHighAccuracy: true,
+	timeout: 5000,
+	maximumAge: 0
+ };
+ function localizacion(pos) {
+	const crd = pos.coords;
+	console.log('Su ubicación actual es:');
+	console.log('Latitud : '+crd.latitude);
+	console.log('Longitud: '+crd.longitude);
+	console.log('Exactitud: más o menos '+crd.accuracy+' metros');
+	console.log('Fecha: '+new Date(pos.timestamp));
+ }
+ function error(err) {
+	console.warn('ERROR: '+err.message+err.code);
+ }
+ navigator.geolocation.getCurrentPosition(localizacion, error, options);
+ 
