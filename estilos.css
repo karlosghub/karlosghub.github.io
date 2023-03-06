@@ -130,7 +130,7 @@ article p {
    text-align: left;
 }
 .empresa {
-   font-size: 16px;
+   font-size: 18px;
    margin: 0;
 }
 .logo1 {
@@ -148,11 +148,11 @@ article p {
    height: 50px;
    margin: 0;
 }
-.KT, .Kaumet, .Cirmetal {
+.KT, .Kaumet, .Cirmetal, .utn, .Cen {
    display: flex;
    flex-direction: row;
    justify-content: center;
-   align-items: center;
+   align-items: start;
 }
 article ul {
    margin-top: 5px;
@@ -165,11 +165,45 @@ article ul li {
    font-size: 15px;
    text-align: left;
 }
+.formacion ul {
+   margin-top: 0;
+   padding-left: 0px;
+}
 .formacion p {
+   font-size: 17px;
    text-align: center;
 }
-.titulo {
-   margin-bottom: 10px;
+.formacion .utn .diplomas p {
+   text-align: left;
+}
+.utn {
+   margin-top: 10px;
+}
+.formacion li {
+   font-size: 17px;
+}
+.logo4 {
+   width: 130px;
+   height: 50px;
+   margin: 5px;
+}
+.edu {
+   margin: 0;
+}
+.logo5 {
+   width: 120px;
+   height: 60px;
+   margin: 0;
+}
+.Cen ul, .KT ul, .utn ul {
+   margin-left: 25px;
+}
+.Cen ul p, .KT ul p, .utn ul p {
+   text-align: left;
+   margin-left: -22px;
+}
+.office {
+   margin-bottom: 20px;
 }
 /**
 Adaptación de la caja de botones a dispositivos móviles
