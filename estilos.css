@@ -163,7 +163,7 @@ article p {
    margin-left: 20px;
    padding: 0;
 }
-.KyT, .Kaumet, .Cirmetal, .utn, .Censabella, .KT {
+.KyT, .Kaumet, .Cirmetal {
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -184,58 +184,8 @@ article ul li {
    font-size: 16px;
    padding: 1px;
 }
-.formacion .escuela {
-   padding-top: 10px;
-}
-.utn {
-   margin-top: 20px;
-}
-.diplomas p {
-   text-align: left;
-}
-.logo4 {
-   width: 120px;
-   height: 45px;
-   margin-top: 5px;
-   margin-left: 10px;
-   margin-right: 5px;
-   padding: 0;
-}
-.Censabella {
+.edu {
    margin-top: 10px;
-}
-.logo5 {
-   width: 130px;
-   height: 60px;
-   margin-top: 5px;
-   margin-left: 20px;
-   margin-right: 10px;
-   padding: 0;
-}
-.Censabella ul {
-   padding-left: 15px;
-}
-.Censabella ul p {
-   text-align: start;
-}
-.Cai {
-   margin-top: 20px;
-}
-.KT {
-   margin-top: 25px;
-}
-.KT ul {
-   padding-left: 20px;
-}
-.KT ul p {
-   padding-top: 10px;
-   text-align: start;
-}
-.utn ul {
-   padding-left: 20px;
-}
-.utn ul p {
-   text-align: start;
 }
 /**
 Adaptación de la caja de botones a dispositivos móviles
@@ -410,7 +360,7 @@ Adaptación de la página a pantallas de escritorio y otros dispositivos
       grid-column: 3/4;
    }
    #body {
-      height: 3000px;
+      height: 3100px;
       max-width: 1400px;
       margin: auto;
    }
