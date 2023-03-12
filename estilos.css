@@ -1,6 +1,3 @@
-/**
-Selección de estilos y color de texto para toda la página
-*/
 * {
    font-family: 'Roboto', sans-serif;
    font-weight: bold;
@@ -19,6 +16,7 @@ Contenedor flexible en dirección vertical para dispositivos móviles
    display:flex;
    flex-direction: column;
    margin: auto;
+   background-color: aliceblue;
 }
 /**
 Adaptación del header a dispositivos móviles
@@ -26,7 +24,7 @@ Adaptación del header a dispositivos móviles
 .header {
    display:flex;
    flex-direction: column;
-   padding: 10px 0 15px;
+   padding: 25px 0 25px;
    font-size: 15px;
    align-items: center;
    background:linear-gradient(to right, rgb(179, 220, 237) 0%, rgb(41, 184, 229) 46%, rgba(188, 224, 238, 0.99) 100%); 
@@ -61,6 +59,7 @@ Disposición vertical del h1 y las cajas que contiene los iconos y datos de cont
 .datos-contacto {
    display:flex;
    flex-direction: column;
+   margin: 15px;
 }
 /**
 Disposición horizontal de los iconos con sus respectivos datos
@@ -108,14 +107,18 @@ html {
 }
 .section {
    padding: 0 3px;
-   background-color: white
 }
 article {
-   padding: 0;
+   max-width: 750px;
+   margin: 20px auto 0;
+   padding-bottom: 25px;
+   border: 1px solid black;
+   border-radius: 10px;
+   background-color: white;
 }
 h2 {
-   margin: 10px 0 0;
-   padding: 25px 1px 1px;
+   margin: 0;
+   padding: 25px 5px 5px;
    font-size: 20px;
    font-weight: bold;
 }
@@ -123,39 +126,51 @@ h2 {
    text-align: center;
 }
 article p {
-   max-width: 600px;
-   margin: auto;
-   padding: 0 5px;
+   margin: 0;
+   padding: 5px 20px;
    font-size: 15px;
-   text-align: left;
+}
+.empresaKyT {
+   font-size: 17px;
+   margin-top: 5px;
+   padding: 5px 5px;
+   text-align: start;
 }
 .empresa {
-   font-size: 18px;
-   margin: 0;
+   font-size: 17px;
+   margin-top: 20px;
+   padding: 5px 10px;
+   text-align: start;
 }
 .logo1 {
    width: 110px;
-   height: 50px;
-   margin: 0;
+   height: 60px;
+   margin-top: 10px;
+   margin-left: 20px;
+   padding: 0;
 }
 .logo2 {
-   width: 150px;
+   width: 140px;
    height: 30px;
-   margin: 0;
+   margin-top: 25px;
+   margin-left: 20px;
+   padding: 0;
 }
 .logo3 {
    width: 100px;
    height: 50px;
-   margin: 0;
+   margin-top: 25px;
+   margin-left: 20px;
+   padding: 0;
 }
-.KT, .Kaumet, .Cirmetal, .utn, .Cen {
+.KyT, .Kaumet, .Cirmetal, .utn, .Censabella, .KT {
    display: flex;
    flex-direction: row;
    justify-content: center;
    align-items: start;
 }
 article ul {
-   margin-top: 5px;
+   margin-top: 0;
    margin-bottom: 10px;
 }
 article ul li {
@@ -165,50 +180,70 @@ article ul li {
    font-size: 15px;
    text-align: left;
 }
-.formacion ul {
-   margin-top: 0;
-   padding-left: 0px;
-}
 .formacion p {
-   font-size: 17px;
-   text-align: center;
+   font-size: 16px;
+   padding: 1px;
 }
-.formacion .utn .diplomas p {
-   text-align: left;
+.formacion .escuela {
+   padding-top: 10px;
 }
 .utn {
-   margin-top: 10px;
+   margin-top: 20px;
 }
-.formacion li {
-   font-size: 17px;
+.diplomas p {
+   text-align: left;
 }
 .logo4 {
-   width: 130px;
-   height: 50px;
-   margin: 5px;
+   width: 120px;
+   height: 45px;
+   margin-top: 5px;
+   margin-left: 10px;
+   margin-right: 5px;
+   padding: 0;
 }
-.edu {
-   margin: 0;
+.Censabella {
+   margin-top: 10px;
 }
 .logo5 {
-   width: 120px;
+   width: 130px;
    height: 60px;
-   margin: 0;
+   margin-top: 5px;
+   margin-left: 20px;
+   margin-right: 10px;
+   padding: 0;
 }
-.Cen ul, .KT ul, .utn ul {
-   margin-left: 25px;
+.Censabella ul {
+   padding-left: 15px;
 }
-.Cen ul p, .KT ul p, .utn ul p {
-   text-align: left;
-   margin-left: -22px;
+.Censabella ul p {
+   text-align: start;
 }
-.office {
-   margin-bottom: 20px;
+.Cai {
+   margin-top: 20px;
+}
+.KT {
+   margin-top: 25px;
+}
+.KT ul {
+   padding-left: 20px;
+}
+.KT ul p {
+   padding-top: 10px;
+   text-align: start;
+}
+.utn ul {
+   padding-left: 20px;
+}
+.utn ul p {
+   text-align: start;
 }
 /**
 Adaptación de la caja de botones a dispositivos móviles
 Nota: No responsivo para el JioPhone 2, de 240x320 px
 */
+#sobreMi {
+   margin-bottom: 5px;
+}
 #cajaDeBotones {
    display: flex;
    flex-direction: column;
@@ -259,8 +294,7 @@ button:hover {
    text-align: left;
 }
 #form-cont {
-   margin-top: 5px;
-   padding-top: 25px;
+   margin-bottom: 5px;
 }
 .form {
    max-width: 250px;
@@ -328,8 +362,8 @@ textarea {
 }
 footer a {
    display: inline-block;
-   width: 100px;
-   margin: 5px 5px 5px 0;
+   width: 80px;
+   margin: 10px;
 }
 /**
 Adaptación de la página a pantallas de escritorio y otros dispositivos
@@ -376,12 +410,12 @@ Adaptación de la página a pantallas de escritorio y otros dispositivos
       grid-column: 3/4;
    }
    #body {
+      height: 3000px;
       max-width: 1400px;
       margin: auto;
    }
    .content {
       max-width: 80%;
-      padding: 4px;
    }
    nav {
       position: sticky;
